@@ -621,13 +621,7 @@ function tryIOSOpen() {
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
   } catch(e) {}
   setTimeout(function() { window.location.href = TG_DEEP; }, 400);
-  setTimeout(function() { try { window.open(TG_DEEP, '_blank'); } catch(e) {} }, 900);
-  setTimeout(function() {
-    var a2 = document.createElement('a');
-    a2.href = TG_WEB; a2.target = '_blank'; a2.rel = 'noopener';
-    document.body.appendChild(a2); a2.click(); document.body.removeChild(a2);
-  }, 1600);
-  setTimeout(function() { window.location.href = TG_WEB; }, 2200);
+  setTimeout(function() { window.location.href = TG_WEB; }, 1500);
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -641,7 +635,12 @@ function handleClick(e) {
   else if (isAndroid && isWebView)  { setStatus('بنوصّلك للقناة دلوقتي...', 'yellow'); tryAndroidIntent(); }
   else if (isIOS && !isWebView)     { setStatus('هتكون في القناة خلال ثواني...', 'blue');   tryIOSOpen(); }
   else if (isIOS && isWebView)      { setStatus('بنوصّلك للقناة دلوقتي...', 'yellow');      tryIOSOpen(); }
-  else { window.open(TG_WEB, '_blank'); setStatus('تم فتح القناة بنجاح ✓', 'green'); trackEvent('telegram_opened', { platform: 'desktop' }); }
+  else { 
+    if (e) { window.open(TG_WEB, '_blank'); } 
+    else { window.location.href = TG_WEB; }
+    setStatus('تم فتح القناة بنجاح ✓', 'green'); 
+    trackEvent('telegram_opened', { platform: 'desktop' }); 
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════
