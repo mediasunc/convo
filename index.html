@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- SEO & META TAGS -->
+<title>🔵 محتوى حصري يومياً — انضم لقناتنا على تيليجرام</title>
+<meta name="description" content="انضم الآن لقناتنا على تيليجرام واستمتع بمحتوى حصري وتحديثات يومية. الانضمام مجاني وفوري!">
+<meta name="keywords" content="تيليجرام, قناة تيليجرام, انضم, Telegram, قناة عربية, محتوى حصري">
+<meta name="author" content="Telegram Channel">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:title" content="محتوى حصري يومياً — انضم لقناتنا على تيليجرام">
+<meta property="og:description" content="انضم الآن واستمتع بمحتوى حصري كل يوم مجاناً. اضغط وانضم في ثانية واحدة!">
+<meta property="og:image" content="https://example.com/og-image.jpg">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="قناة تيليجرام">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="محتوى حصري يومياً — انضم لقناتنا على تيليجرام">
+<meta name="twitter:description" content="محتوى حصري كل يوم — الانضمام مجاني وفوري!">
+<meta name="twitter:image" content="https://example.com/og-image.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"انضم لقناتنا على تيليجرام","description":"انضم الآن لقناتنا على تيليجرام واستمتع بمحتوى حصري يومي مجاناً.","url":"https://example.com/"}
+</script>
+
+<!-- FACEBOOK PIXEL — ضع رقم البيكسل مكان YOUR_PIXEL_ID -->
+<!--
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+-->
+
+<!-- GOOGLE ANALYTICS 4 — ضع معرّف GA4 مكان G-XXXXXXXXXX -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ── RESET ── */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+
+/* ── TOKENS ── */
+:root{
+  --blue:#38b6f5;
+  --blue2:#1a8fd1;
+  --blue-glow:rgba(56,182,245,0.45);
+  --blue-soft:rgba(56,182,245,0.12);
+  --bg:#060a10;
+  --surface:rgba(255,255,255,0.04);
+  --surface2:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.09);
+  --border2:rgba(56,182,245,0.3);
+  --text:#f0f4f8;
+  --muted:#7a8a9a;
+  --muted2:#4a5a6a;
+  --green:#2dd96b;
+  --green-glow:rgba(45,217,107,0.3);
+  --yellow:#fbbf24;
+  --red:#f87171;
+  --r:20px;--r2:14px;--r3:10px
+}
+
+html,body{
+  width:100%;min-height:100vh;
+  font-family:'Tajawal',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ── BACKGROUND ── */
+.bg-layer{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% -10%, rgba(56,182,245,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 25% at 15% 90%, rgba(26,143,209,0.07) 0%, transparent 55%);
+}
+.grid-lines{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(56,182,245,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(56,182,245,0.03) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,black 10%,transparent 80%);
+}
+
+/* ── LAYOUT ── */
+.page{
+  position:relative;z-index:1;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:48px 24px;
+}
+.wrap{
+  width:100%;max-width:380px;
+  display:flex;flex-direction:column;align-items:center;
+}
+
+/* ── LOGO AREA ── */
+.logo-area{
+  display:flex;flex-direction:column;align-items:center;
+  margin-bottom:36px;
+  animation:riseIn .8s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── LIVE BADGE ── */
+.badge{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:5px 14px 5px 12px;
+  border-radius:30px;
+  font-size:11.5px;font-weight:700;letter-spacing:.4px;
+  border:1px solid rgba(45,217,107,0.25);
+  background:rgba(45,217,107,0.06);
+  color:var(--green);
+  margin-bottom:28px;
+  transition:all .4s;
+}
+.badge .b-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--green);
+  flex-shrink:0;
+  box-shadow:0 0 0 0 rgba(45,217,107,0.5);
+  animation:livePulse 2s ease infinite;
+}
+/* JS can still override these classes */
+.badge-green{color:var(--green)!important;border-color:rgba(45,217,107,0.25)!important;background:rgba(45,217,107,0.06)!important}
+.badge-yellow{color:var(--yellow)!important;border-color:rgba(251,191,36,0.25)!important;background:rgba(251,191,36,0.06)!important}
+.badge-red{color:var(--red)!important;border-color:rgba(248,113,113,0.25)!important;background:rgba(248,113,113,0.06)!important}
+
+/* ── ICON MARK ── */
+.logo-orbit{
+  position:relative;
+  width:110px;height:110px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:28px;
+}
+/* kept in DOM for JS compatibility — hidden */
+.orbit-ring{display:none}
+.orbit-dot{display:none}
+
+.logo-glow{
+  position:absolute;inset:0;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(56,182,245,0.2) 0%, transparent 68%);
+  animation:breathe 4s ease-in-out infinite;
+}
+.logo-circle{
+  width:88px;height:88px;border-radius:26px;
+  background:linear-gradient(150deg,#1c6fa6 0%,#0b3f62 100%);
+  border:1px solid rgba(56,182,245,0.35);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+  box-shadow:
+    0 0 0 10px rgba(56,182,245,0.055),
+    0 12px 48px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+  transition:transform .3s cubic-bezier(.22,1,.36,1);
+}
+.logo-circle:hover{transform:translateY(-2px)}
+.logo-circle svg{
+  width:46px;height:46px;fill:#fff;
+  filter:drop-shadow(0 2px 10px rgba(56,182,245,0.5));
+}
+
+/* ── HEADLINE ── */
+h1{
+  font-size:clamp(22px,6.5vw,28px);
+  font-weight:900;
+  text-align:center;
+  letter-spacing:-.5px;
+  line-height:1.25;
+  margin-bottom:10px;
+  color:#f0f4f8;
+  background:linear-gradient(145deg,#ffffff 20%,#90cef4 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sub{
+  font-size:clamp(14px,3.8vw,16px);
+  color:var(--muted);
+  text-align:center;
+  line-height:1.75;
+  max-width:270px;
+  font-weight:400;
+}
+
+/* ── TRUST ROW ── */
+.trust-row{
+  display:flex;align-items:center;gap:20px;
+  margin-top:18px;
+}
+.trust-item{
+  display:flex;align-items:center;gap:7px;
+  font-size:12px;color:var(--muted);font-weight:500;
+}
+.trust-item svg{width:14px;height:14px;opacity:.55;flex-shrink:0}
+.trust-sep{width:1px;height:16px;background:var(--border)}
+
+/* ── STATUS BAR ── */
+.status-wrap{
+  width:100%;margin-bottom:22px;
+  animation:riseIn .8s .12s cubic-bezier(.22,1,.36,1) both;
+}
+.status-bar{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r2);
+  padding:11px 15px;
+  font-size:clamp(11.5px,3vw,13px);
+  display:flex;align-items:center;gap:9px;
+  transition:border-color .4s,background .4s,opacity .4s;
+  color:var(--muted);
+}
+.status-bar.s-green{border-color:rgba(45,217,107,0.25);background:rgba(45,217,107,0.05);color:#9dd9b2}
+.status-bar.s-yellow{border-color:rgba(251,191,36,0.25);background:rgba(251,191,36,0.05);color:#d4ae6e}
+.dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;transition:background .4s}
+.dot-blue{background:var(--blue);animation:pulseBlue 1.6s infinite}
+.dot-green{background:var(--green);box-shadow:0 0 6px var(--green-glow)}
+.dot-yellow{background:var(--yellow)}
+.dot-red{background:var(--red)}
+
+/* ── BUTTONS ── */
+.btns{
+  width:100%;display:flex;flex-direction:column;gap:10px;
+  animation:riseIn .8s .2s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* PRIMARY CTA */
+.btn-primary{
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  width:100%;
+  background:linear-gradient(135deg,#38b6f5 0%,#1080c0 100%);
+  color:#fff;
+  padding:clamp(17px,4.8vw,20px) 24px;
+  border-radius:var(--r);
+  font-family:'Tajawal',sans-serif;
+  font-size:clamp(16px,4.5vw,18px);font-weight:700;
+  border:none;cursor:pointer;
+  box-shadow:
+    0 6px 36px rgba(56,182,245,0.38),
+    0 1px 0 rgba(255,255,255,0.18) inset;
+  transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s;
+  position:relative;overflow:hidden;
+  letter-spacing:.1px;
+}
+.btn-primary::before{
+  content:'';position:absolute;
+  top:0;left:-120%;width:55%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.16),transparent);
+  animation:shimmer 3.5s 2s infinite;
+}
+.btn-primary:active{transform:scale(0.975);box-shadow:0 2px 16px rgba(56,182,245,0.28)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 44px rgba(56,182,245,0.45),0 1px 0 rgba(255,255,255,0.18) inset}
+
+/* SECONDARY — ghost style */
+.btn-secondary{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;
+  background:transparent;
+  color:var(--muted);
+  padding:clamp(13px,3.8vw,15px) 20px;
+  border-radius:var(--r);
+  font-family:'Tajawal',sans-serif;
+  font-size:clamp(13px,3.5vw,15px);font-weight:600;
+  border:1px solid var(--border);cursor:pointer;
+  transition:all .2s;
+}
+.btn-secondary:active{transform:scale(0.975)}
+.btn-secondary:hover,.btn-secondary:focus{background:var(--surface);color:var(--text);border-color:rgba(255,255,255,0.15)}
+.btn-success{color:var(--green)!important;border-color:rgba(45,217,107,0.3)!important;background:rgba(45,217,107,0.06)!important}
+
+/* ── DIVIDER ── */
+.divider{
+  width:100%;border:none;
+  height:1px;background:var(--border);
+  margin:22px 0;
+  animation:riseIn .8s .28s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── STEPS — shown only for in-app browsers ── */
+.steps-section{width:100%}
+.or-row{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:14px;
+}
+.or-line{flex:1;height:1px;background:var(--border)}
+.or-txt{color:var(--muted2);font-size:10.5px;font-weight:700;letter-spacing:.9px;white-space:nowrap;text-transform:uppercase}
+.steps-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:18px 20px;
+}
+.steps-title{
+  font-size:clamp(13px,3.5vw,14px);font-weight:700;
+  color:var(--text);margin-bottom:14px;
+  display:flex;align-items:center;gap:10px;
+}
+.steps-icon{
+  width:28px;height:28px;border-radius:8px;
+  background:var(--blue-soft);
+  border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;
+}
+.step-row{
+  display:flex;align-items:flex-start;gap:12px;
+  margin-bottom:12px;
+}
+.step-row:last-child{margin-bottom:0}
+.step-n{
+  width:26px;height:26px;border-radius:50%;flex-shrink:0;
+  background:var(--blue-soft);border:1px solid var(--border2);
+  color:var(--blue);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11.5px;font-weight:700;margin-top:1px;
+}
+.step-txt{
+  font-size:clamp(12px,3.2vw,13.5px);
+  color:#8a9eaf;line-height:1.75;padding-top:3px;
+}
+
+/* ── NOTE ── */
+.note{
+  font-size:clamp(11px,2.7vw,12px);
+  color:var(--muted2);text-align:center;
+  margin-top:14px;line-height:1.75;
+  padding:0 8px;
+  animation:riseIn .8s .34s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── AUTO-REDIRECT CANCEL ── */
+#autoRedirectCancel{
+  display:none;
+  margin-top:12px;
+  font-size:clamp(11px,2.8vw,12px);
+  color:var(--muted2);
+  text-align:center;
+  cursor:pointer;
+  text-decoration:underline;
+  text-decoration-style:dotted;
+  text-underline-offset:3px;
+  transition:color .2s;
+}
+#autoRedirectCancel:hover{color:var(--red)}
+
+/* ── KEYFRAMES ── */
+@keyframes riseIn{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes spinRing{
+  from{transform:rotate(0deg)} to{transform:rotate(360deg)}
+}
+@keyframes breathe{
+  0%,100%{opacity:.5;transform:scale(1)}
+  50%{opacity:.9;transform:scale(1.08)}
+}
+@keyframes pulseBlue{
+  0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(56,182,245,0.5)}
+  50%{opacity:.5;box-shadow:0 0 0 4px rgba(56,182,245,0)}
+}
+@keyframes livePulse{
+  0%{box-shadow:0 0 0 0 rgba(45,217,107,0.5)}
+  70%{box-shadow:0 0 0 6px rgba(45,217,107,0)}
+  100%{box-shadow:0 0 0 0 rgba(45,217,107,0)}
+}
+@keyframes shimmer{
+  0%{left:-120%} 100%{left:220%}
+}
+
+/* ── ICON SIZES ── */
+.tg-svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+.copy-svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="grid-lines"></div>
+
+<div class="page">
+<div class="wrap">
+
+  <!-- LOGO AREA -->
+  <div class="logo-area">
+
+    <!-- Badge: JS uses setBadge() on this element -->
+    <div class="badge badge-green" id="envBadge">
+      <span class="b-dot"></span>
+      <span>محتوى حصري</span>
+    </div>
+
+    <!-- Logo icon mark -->
+    <div class="logo-orbit">
+      <div class="logo-glow"></div>
+      <!-- orbit-ring & orbit-dot kept hidden for JS compatibility -->
+      <div class="orbit-ring"><div class="orbit-dot"></div></div>
+      <div class="logo-circle">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+        </svg>
+      </div>
+    </div>
+
+    <h1>كل يوم محتوى جديد<br>ينتظرك في القناة</h1>
+    <p class="sub" id="subText">انضم الآن وابدأ تستفيد — مجاناً وبدون أي تعقيد</p>
+
+    <!-- Trust row -->
+    <div class="trust-row">
+      <div class="trust-item">
+        <!-- people icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        مجتمع نشيط
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <!-- zap icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        نشر يومي
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <!-- shield icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        مجاني ١٠٠٪
+      </div>
+    </div>
+  </div>
+
+  <!-- STATUS BAR -->
+  <div class="status-wrap">
+    <div class="status-bar" id="statusBar">
+      <div class="dot dot-blue" id="statusDot"></div>
+      <span id="statusText">جاهز للانضمام — اضغط الزرار</span>
+    </div>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="btns">
+    <button class="btn-primary" id="btnMain">
+      <svg class="tg-svg" viewBox="0 0 24 24">
+        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+      </svg>
+      انضم للقناة مجاناً الآن
+    </button>
+
+    <button class="btn-secondary" id="btnCopy" onclick="doCopy()">
+      <svg class="copy-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+      </svg>
+      انسخ رابط القناة
+    </button>
+  </div>
+
+  <!-- AUTO-REDIRECT CANCEL -->
+  <span id="autoRedirectCancel" onclick="cancelAutoRedirect()">إيقاف الانتقال التلقائي ✕</span>
+
+  <!-- STEPS — shown only when JS needs it (in-app browsers) -->
+  <div class="steps-section" id="stepsSection" style="display:none">
+    <div class="divider" style="animation:none"></div>
+    <div class="or-row">
+      <div class="or-line"></div>
+      <span class="or-txt">خطوة واحدة بس</span>
+      <div class="or-line"></div>
+    </div>
+    <div class="steps-box">
+      <div class="steps-title">
+        <div class="steps-icon">📲</div>
+        <span id="stepsTitle">افتح في المتصفح الخارجي</span>
+      </div>
+      <div id="stepsContent"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <p class="note" id="noteText">الانضمام مجاني تماماً — لا حاجة لأي تسجيل</p>
+
+</div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   CONFIGURATION
+   ═══════════════════════════════════════════════════════════ */
+var TG_WEB  = "https://t.me/+IuEmlaZf3SE2Mjgx";
+var TG_DEEP = "tg://join/?invite=IuEmlaZf3SE2Mjgx";
+
+/* ═══════════════════════════════════════════════════════════
+   DEVICE & ENVIRONMENT DETECTION
+   ═══════════════════════════════════════════════════════════ */
+var ua         = navigator.userAgent || "";
+var isIOS      = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+var isAndroid  = /Android/.test(ua);
+var isTikTok   = /musical_ly|TikTok/i.test(ua) || /BytedanceWebview|ByteLocale/i.test(ua);
+var isInstagram= /Instagram/.test(ua);
+var isFacebook = /FBAN|FBAV|FB_IAB/.test(ua);
+var isLine     = /Line\//.test(ua);
+var isSnapchat = /Snapchat/.test(ua);
+var isInApp    = isTikTok || isInstagram || isFacebook || isLine || isSnapchat;
+var isWebView  = isInApp || (/wv/.test(ua) && isAndroid) || (isIOS && !/Safari\//.test(ua) && /AppleWebKit/.test(ua));
+
+/* ═══════════════════════════════════════════════════════════
+   AUTO-REDIRECT STATE
+   ═══════════════════════════════════════════════════════════ */
+var autoRedirectTimer    = null;
+var autoRedirectCountdown= null;
+var autoRedirectCancelled= false;
+
+/* ═══════════════════════════════════════════════════════════
+   ANALYTICS HELPERS
+   ═══════════════════════════════════════════════════════════ */
+function trackEvent(name, params) {
+  console.log('[Tracking]', name, params || '');
+  // if (typeof gtag === 'function') { gtag('event', name, params || {}); }
+  // if (typeof fbq === 'function') { fbq('track', name === 'button_click' ? 'Lead' : 'PageView', params || {}); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UI HELPERS
+   ═══════════════════════════════════════════════════════════ */
+function setStatus(txt, type) {
+  var dot  = document.getElementById('statusDot');
+  var bar  = document.getElementById('statusBar');
+  document.getElementById('statusText').textContent = txt;
+  dot.className = 'dot dot-' + (type || 'blue');
+  bar.className = 'status-bar' + (type === 'green' ? ' s-green' : type === 'yellow' ? ' s-yellow' : '');
+}
+
+function setBadge(txt, cls) {
+  var b = document.getElementById('envBadge');
+  b.className = 'badge' + (cls ? ' badge-' + cls : '');
+  b.innerHTML = '<span class="b-dot"></span><span>' + txt + '</span>';
+}
+
+function showSteps(title, steps) {
+  document.getElementById('stepsSection').style.display = 'block';
+  document.getElementById('stepsTitle').textContent = title;
+  var nums = ['١', '٢', '٣', '٤'];
+  var html = '';
+  steps.forEach(function(s, i) {
+    html += '<div class="step-row"><div class="step-n">' + nums[i] + '</div><div class="step-txt">' + s + '</div></div>';
+  });
+  document.getElementById('stepsContent').innerHTML = html;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COPY FUNCTION
+   ═══════════════════════════════════════════════════════════ */
+function doCopy() {
+  var btn = document.getElementById('btnCopy');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(TG_WEB).then(function() {
+      btn.innerHTML = '<span style="font-size:16px">✓</span> تم النسخ — الصق الرابط في تيليجرام';
+      btn.classList.add('btn-success');
+      setStatus('الرابط اتنسخ — افتح تيليجرام والصق', 'green');
+    }).catch(function() { fallbackCopy(btn); });
+  } else { fallbackCopy(btn); }
+}
+
+function fallbackCopy(btn) {
+  try {
+    var ta = document.createElement('textarea');
+    ta.value = TG_WEB; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    btn.innerHTML = '<span style="font-size:16px">✓</span> تم النسخ — الصق الرابط في تيليجرام';
+    btn.classList.add('btn-success');
+    setStatus('الرابط اتنسخ بنجاح', 'green');
+  } catch(e) {
+    btn.textContent = 'الرابط: ' + TG_WEB;
+    setStatus('انسخ الرابط يدوياً', 'yellow');
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ANDROID INTENT
+   ═══════════════════════════════════════════════════════════ */
+function tryAndroidIntent() {
+  var i1 = "intent://join/?invite=IuEmlaZf3SE2Mjgx#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url=" + encodeURIComponent(TG_WEB) + ";end";
+  window.location.href = i1;
+  setTimeout(function() {
+    var i2 = "intent://join/?invite=IuEmlaZf3SE2Mjgx#Intent;scheme=tg;package=org.telegram.messenger.beta;S.browser_fallback_url=" + encodeURIComponent(TG_WEB) + ";end";
+    window.location.href = i2;
+  }, 700);
+  setTimeout(function() { window.location.href = TG_DEEP; }, 1500);
+  setTimeout(function() { window.location.href = TG_WEB; }, 2500);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   iOS OPEN
+   ═══════════════════════════════════════════════════════════ */
+function tryIOSOpen() {
+  try {
+    var a = document.createElement('a');
+    a.href = TG_DEEP; a.style.display = 'none';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  } catch(e) {}
+  setTimeout(function() { window.location.href = TG_DEEP; }, 400);
+  setTimeout(function() { try { window.open(TG_DEEP, '_blank'); } catch(e) {} }, 900);
+  setTimeout(function() {
+    var a2 = document.createElement('a');
+    a2.href = TG_WEB; a2.target = '_blank'; a2.rel = 'noopener';
+    document.body.appendChild(a2); a2.click(); document.body.removeChild(a2);
+  }, 1600);
+  setTimeout(function() { window.location.href = TG_WEB; }, 2200);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MAIN CLICK HANDLER
+   ═══════════════════════════════════════════════════════════ */
+function handleClick(e) {
+  if (e && e.preventDefault) e.preventDefault();
+  trackEvent('button_click', { method: isAndroid ? 'android' : isIOS ? 'ios' : 'desktop' });
+  cancelAutoRedirect(true);
+  if (isAndroid && !isWebView)      { setStatus('هتكون في القناة خلال ثواني...', 'blue');   tryAndroidIntent(); }
+  else if (isAndroid && isWebView)  { setStatus('بنوصّلك للقناة دلوقتي...', 'yellow'); tryAndroidIntent(); }
+  else if (isIOS && !isWebView)     { setStatus('هتكون في القناة خلال ثواني...', 'blue');   tryIOSOpen(); }
+  else if (isIOS && isWebView)      { setStatus('بنوصّلك للقناة دلوقتي...', 'yellow');      tryIOSOpen(); }
+  else { window.open(TG_WEB, '_blank'); setStatus('تم فتح القناة بنجاح ✓', 'green'); trackEvent('telegram_opened', { platform: 'desktop' }); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   AUTO-REDIRECT LOGIC
+   ═══════════════════════════════════════════════════════════ */
+function startAutoRedirect() {
+  if (autoRedirectCancelled) return;
+  var cancelEl = document.getElementById('autoRedirectCancel');
+  cancelEl.style.display = 'block';
+  autoRedirectCountdown = setTimeout(function() {
+    if (autoRedirectCancelled) return;
+    setStatus('هتنتقل للقناة تلقائياً...', 'blue');
+    setTimeout(function() { if (!autoRedirectCancelled) setStatus('الانتقال خلال ٣...', 'blue'); }, 0);
+    setTimeout(function() { if (!autoRedirectCancelled) setStatus('الانتقال خلال ٢...', 'blue'); }, 500);
+    setTimeout(function() { if (!autoRedirectCancelled) setStatus('الانتقال خلال ١...', 'blue'); }, 1000);
+  }, 2000);
+  autoRedirectTimer = setTimeout(function() {
+    if (autoRedirectCancelled) return;
+    cancelEl.style.display = 'none';
+    trackEvent('auto_redirect_fired', {});
+    handleClick(null);
+  }, 3500);
+}
+
+function cancelAutoRedirect(silent) {
+  autoRedirectCancelled = true;
+  if (autoRedirectTimer)    { clearTimeout(autoRedirectTimer);    autoRedirectTimer    = null; }
+  if (autoRedirectCountdown){ clearTimeout(autoRedirectCountdown);autoRedirectCountdown= null; }
+  var cancelEl = document.getElementById('autoRedirectCancel');
+  if (cancelEl) cancelEl.style.display = 'none';
+  if (!silent) {
+    setStatus('تم إيقاف الانتقال التلقائي', 'yellow');
+    trackEvent('auto_redirect_cancelled', {});
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════════════════ */
+function init() {
+  document.getElementById('btnMain').onclick = handleClick;
+  var note = document.getElementById('noteText');
+
+  if (isTikTok) {
+    setBadge('افتح في المتصفح', 'yellow');
+    setStatus('اضغط الزرار وهتكون في القناة', 'yellow');
+    document.getElementById('subText').textContent = 'خطوة واحدة وهتكون معانا';
+    if (isAndroid) {
+      showSteps('افتح في المتصفح الخارجي', [
+        'اضغط على النقاط الثلاث (⋯) في أعلى الشاشة',
+        'اختار "فتح في المتصفح"',
+        'اضغط زرار الانضمام في المتصفح',
+        'تيليجرام هيفتح وتنضم فوراً'
+      ]);
+      note.textContent = 'بعد ما تفتح المتصفح، اضغط الزرار وانضم بثانية واحدة';
+    } else {
+      showSteps('افتح في Safari أولاً', [
+        'اضغط أيقونة المشاركة (⬆) في الأعلى',
+        'اختار "فتح في Safari"',
+        'اضغط زرار الانضمام',
+        'اضغط "فتح" في التنبيه'
+      ]);
+      note.textContent = 'Safari هو أسرع طريقة للانضمام على iPhone';
+    }
+
+  } else if (isInstagram || isFacebook) {
+    setBadge('افتح في المتصفح', 'yellow');
+    setStatus('اضغط الزرار وهتكون في القناة', 'yellow');
+    document.getElementById('subText').textContent = 'خطوة واحدة وهتكون معانا';
+    if (isIOS) {
+      showSteps('افتح في Safari', [
+        'اضغط على النقاط (⋯) أو أيقونة Safari',
+        'اختار "Open in Safari"',
+        'اضغط زرار الانضمام',
+        'اضغط "فتح" في التنبيه'
+      ]);
+    } else {
+      showSteps('افتح في المتصفح الخارجي', [
+        'اضغط على النقاط (⋯) في أعلى الشاشة',
+        'اختار "Open in external browser"',
+        'اضغط زرار الانضمام في المتصفح'
+      ]);
+    }
+
+  } else if (isWebView) {
+    setBadge('مباشر الآن', 'yellow');
+    setStatus('اضغط الزرار للانضمام', 'yellow');
+    document.getElementById('subText').textContent = 'اضغط الزرار وهتكون في القناة فوراً';
+    showSteps('لو ما فتحش تلقائي', [
+      'ابحث عن "فتح في المتصفح" في الأعلى',
+      'اضغط زرار الانضمام في المتصفح'
+    ]);
+
+  } else if (isAndroid) {
+    setBadge('محتوى حصري', 'green');
+    setStatus('هتكون في القناة خلال ثواني...', 'green');
+    document.getElementById('subText').textContent = 'محتوى حصري كل يوم — انضم مجاناً';
+    note.textContent = 'الانضمام مجاني تماماً — لا حاجة لأي تسجيل';
+    handleClick(null);
+
+  } else if (isIOS) {
+    setBadge('محتوى حصري', 'green');
+    setStatus('هتكون في القناة خلال ثواني...', 'green');
+    document.getElementById('subText').textContent = 'محتوى حصري كل يوم — انضم مجاناً';
+    note.textContent = 'الانضمام مجاني تماماً — لا حاجة لأي تسجيل';
+    handleClick(null);
+
+  } else {
+    setBadge('محتوى حصري', 'green');
+    setStatus('جاهز للانضمام — اضغط الزرار', 'green');
+    document.getElementById('subText').textContent = 'محتوى حصري كل يوم — انضم مجاناً';
+    note.textContent = 'الانضمام مجاني تماماً — لا حاجة لأي تسجيل';
+    handleClick(null);
+  }
+
+  if (isWebView && !isInApp) {
+    startAutoRedirect();
+  }
+}
+
+window.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
+
+<!--
+═══════════════════════════════════════════════════════════
+SUMMARY OF CHANGES (v2 → v3)
+═══════════════════════════════════════════════════════════
+
+1. BADGE (default & JS-set states)
+   - Default badge changed from "مباشر الآن" → "محتوى حصري" (benefit-focused, always positive)
+   - TikTok/Instagram/Facebook/WebView badge changed from "افتح في المتصفح" → "افتح في المتصفح"
+     kept but badge for Android/iOS/Desktop changed to "محتوى حصري" instead of "مباشر الآن"
+   - All badge states remain non-technical and user-friendly
+
+2. STATUS BAR MESSAGES (inside handleClick & startAutoRedirect)
+   - "جاري فتح تيليجرام..." → "هتكون في القناة خلال ثواني..."  (benefit-oriented, warm)
+   - "جاري المحاولة..." → "بنوصّلك للقناة دلوقتي..."          (calm, confident)
+   - "جاري التحويل تلقائياً..." → "هتنتقل للقناة تلقائياً..."   (cleaner phrasing)
+   - "جاري التحويل... ٣/٢/١" → "الانتقال خلال ٣/٢/١..."        (simpler countdown)
+   - "تم فتح الرابط" → "تم فتح القناة بنجاح ✓"                (positive confirmation)
+   - "جاهز — اضغط للانضمام الآن" → "جاهز للانضمام — اضغط الزرار" (default status bar text)
+   - "تم إيقاف التحويل التلقائي" → "تم إيقاف الانتقال التلقائي"  (consistent terminology)
+
+3. HEADLINE
+   - "قناتنا على تيليجرام" → "كل يوم محتوى جديد / ينتظرك في القناة"
+     (two-line, benefit-first, creates anticipation and urgency without spam)
+
+4. SUBHEADLINE (default)
+   - "محتوى حصري كل يوم — انضم مجاناً" → "انضم الآن وابدأ تستفيد — مجاناً وبدون أي تعقيد"
+     (action-oriented, removes friction, emphasizes simplicity)
+
+5. TRUST ROW
+   - "آلاف الأعضاء" → "مجتمع نشيط"   (credible, not exaggerated)
+   - "تحديث يومي" → "نشر يومي"       (slightly more concrete and natural)
+   - "مجاني ١٠٠٪" kept as-is          (already clear and safe)
+
+6. STEPS (in-app browser flows)
+   - TikTok Android step 4: "تيليجرام هيفتح مباشرة" → "تيليجرام هيفتح وتنضم فوراً" (outcome-focused)
+   - TikTok iOS note: simplified to focus on Safari as the fastest route
+   - TikTok/IG/FB subText: "خطوة واحدة وهتكون في القناة" → "خطوة واحدة وهتكون معانا" (warmer)
+   - WebView subText: more direct and reassuring
+
+7. PRIMARY BUTTON
+   - "انضم للقناة الآن" → "انضم للقناة مجاناً الآن" (reinforces zero cost, reduces friction)
+
+8. AUTO-REDIRECT CANCEL LINK
+   - "إيقاف التحويل التلقائي ✕" → "إيقاف الانتقال التلقائي ✕" (consistent with status messages)
+
+9. FOOTER NOTE
+   - "الانضمام مجاني تماماً — لا يلزم تسجيل" → "الانضمام مجاني تماماً — لا حاجة لأي تسجيل"
+     (more natural, colloquial Arabic phrasing)
+
+10. META / SEO
+    - Page title reordered to lead with benefit: "محتوى حصري يومياً — انضم لقناتنا على تيليجرام"
+    - og:title and og:description similarly refreshed for better click-through
+
+ALL JAVASCRIPT FUNCTIONS, VARIABLES, IDs, CLASSES, AND LOGIC ARE 100% UNCHANGED.
+═══════════════════════════════════════════════════════════
+-->
