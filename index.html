@@ -317,7 +317,7 @@ h1 {
 
   <div class="actions">
     <!-- 1. Telegram Button -->
-    <a href="https://t.me/+IuEmlaZf3SE2Mjgx" target="_blank" class="btn btn-telegram">
+    <a href="https://t.me/+IuEmlaZf3SE2Mjgx" target="_blank" class="btn btn-telegram" onclick="openTelegram(event, 'https://t.me/+IuEmlaZf3SE2Mjgx', 'join/?invite=IuEmlaZf3SE2Mjgx')">
       <svg viewBox="0 0 24 24">
         <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
       </svg>
@@ -344,7 +344,7 @@ h1 {
     </button>
 
     <!-- 4. Private Message Button (Now Blue with different logo) -->
-    <a href="https://t.me/generalFady" target="_blank" class="btn btn-private">
+    <a href="https://t.me/generalFady" target="_blank" class="btn btn-private" onclick="openTelegram(event, 'https://t.me/generalFady', 'resolve?domain=generalFady')">
       <!-- Paper Plane Outline Logo to distinguish from Channel Logo -->
       <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -380,6 +380,47 @@ h1 {
   </svg>
   تم نسخ الكود بنجاح!
 </div>
+
+<!-- Telegram Redirect Script -->
+<script>
+  var ua         = navigator.userAgent || "";
+  var isIOS      = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+  var isAndroid  = /Android/.test(ua);
+  var isTikTok   = /musical_ly|TikTok/i.test(ua) || /BytedanceWebview|ByteLocale/i.test(ua);
+  var isInstagram= /Instagram/.test(ua);
+  var isFacebook = /FBAN|FBAV|FB_IAB/.test(ua);
+  var isLine     = /Line\//.test(ua);
+  var isSnapchat = /Snapchat/.test(ua);
+  var isInApp    = isTikTok || isInstagram || isFacebook || isLine || isSnapchat;
+  var isWebView  = isInApp || (/wv/.test(ua) && isAndroid) || (isIOS && !/Safari\//.test(ua) && /AppleWebKit/.test(ua));
+
+  function openTelegram(e, webUrl, tgPath) {
+    if (e && e.preventDefault) e.preventDefault();
+    var tgDeep = "tg://" + tgPath;
+
+    if (isAndroid) {
+      var i1 = "intent://" + tgPath + "#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end";
+      window.location.href = i1;
+      setTimeout(function() {
+        var i2 = "intent://" + tgPath + "#Intent;scheme=tg;package=org.telegram.messenger.beta;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end";
+        window.location.href = i2;
+      }, 700);
+      setTimeout(function() { window.location.href = tgDeep; }, 1500);
+      setTimeout(function() { window.location.href = webUrl; }, 2500);
+    } else if (isIOS) {
+      try {
+        var a = document.createElement('a');
+        a.href = tgDeep; a.style.display = 'none';
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      } catch(err) {}
+      setTimeout(function() { window.location.href = tgDeep; }, 400);
+      setTimeout(function() { window.location.href = webUrl; }, 1500);
+    } else {
+      if (e) { window.open(webUrl, '_blank'); } 
+      else { window.location.href = webUrl; }
+    }
+  }
+</script>
 
 <script>
   function copyCode(code) {
